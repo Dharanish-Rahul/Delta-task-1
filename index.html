@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello boss</title>
+</head>
+<body>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+    
+    <button class="start" onclick="assignc()">START</button>
+    <button class="reset" onclick="assignc()">RESET</button>
+    
+    <div class="sol">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
+
+    <hr class="line">
+    
+    <br>
+    <br>
+    
+    <hr class="line2">
+    <div class="prob">
+        <div class="pcube" onclick="check(0)" ></div>
+        <div class="pcube" onclick="check(1)" ></div>
+        <div class="pcube" onclick="check(2)" ></div>
+        <div class="pcube" onclick="check(3)" ></div>
+        <div class="pcube" onclick="check(4)" ></div>
+        <div class="pcube" onclick="check(5)" ></div>
+        <div class="pcube" id="border1" onclick="check(6)" ></div>
+        <div class="pcube" id="border2" onclick="check(7)" ></div>
+        <div class="pcube" id="border3" onclick="check(8)" ></div>
+        <div class="pcube" onclick="check(9)" ></div>
+        <div class="pcube" onclick="check(10)" ></div>
+        <div class="pcube" id="border4" onclick="check(11)" ></div>
+        <div class="pcube" id="border5" onclick="check(12)" ></div>
+        <div class="pcube" id="border6" onclick="check(13)" ></div>
+        <div class="pcube" onclick="check(14)" ></div>
+        <div class="pcube" onclick="check(15)" ></div>
+        <div class="pcube" id="border7" onclick="check(16)" ></div>
+        <div class="pcube" id="border8" onclick="check(17)" ></div>
+        <div class="pcube" id="border9" onclick="check(18)" ></div>
+        <div class="pcube" onclick="check(19)" ></div>
+        <div class="pcube" onclick="check(20)" ></div>
+        <div class="pcube" onclick="check(21)" ></div>
+        <div class="pcube" onclick="check(22)" ></div>
+        <div class="pcube" onclick="check(23)" ></div>
+        <div class="pcube" onclick="check(24)" ></div>
+    </div>
+    <hr class="line3">
+    <div class="score" id="score"> score:0</div>
+
+    <div class="bg-popup">
+        <div class="content">
+            <button class="close" onclick="disp_close()">+</button>
+            <h1 class="title_modal"> YOU WIN !</h1>
+            <p class="scoreboard" id="scoreboard">Score: </p>
+            <button class="try_again" onclick="assignc()""> Try Again </button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
